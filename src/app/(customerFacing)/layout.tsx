@@ -10,16 +10,9 @@ export default function Layout({
     return (
         <>
             <Nav>
-                <div className="flex justify-between my-8">
-                    <div className="items-start">
-                        <h1>logo</h1>
-                    </div>
-                    <div>
-                        <NavLink href="/">Home</NavLink>
-                        <NavLink href="/products">Products</NavLink>
-                        <NavLink href="/orders">My Orders</NavLink>
-                    </div>
-                </div>
+                <NavLink href="/">Home</NavLink>
+                <NavLink href="/products">Products</NavLink>
+                <NavLink href="/orders">My Orders</NavLink>
             </Nav>
             <div className="container my-6">{children}</div>
         </>
